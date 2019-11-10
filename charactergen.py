@@ -1,5 +1,6 @@
 #!/usr/bin/python
-#rev 0.01
+#rev 0.1
+#Last modified 11/9/2019
 #writen by Kevin Burkeland
 import dice, mod, cclass
 print("Welcome to revision .01 of Kevin Burkelands Pathfinder Character Gen script")
