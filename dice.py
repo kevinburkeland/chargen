@@ -1,48 +1,36 @@
 #!/usr/bin/python
 #rev 0.1
-#Last modified 11/9/2019
+#Last modified 2/8/2022
 #writen by Kevin Burkeland
 #imports random
 import random
-#define four sided dice
-def roll_d4(number_of_dice):
-	rolls = []
-	for _ in range(number_of_dice):
-		roll = random.randint(1,4)
-		rolls.append(roll)
-	return rolls
-#define six sided dice
-def roll_d6(number_of_dice):
-	rolls = []
-	for _ in range(number_of_dice):
-		roll = random.randint(1,6)
-		rolls.append(roll)
-	return rolls
-#define eight sided dice
-def roll_d8(number_of_dice):
-	rolls = []
-	for _ in range(number_of_dice):
-		roll = random.randint(1,8)
-		rolls.append(roll)
-	return rolls
-#define ten sided dice
-def roll_d10(number_of_dice):
-	rolls = []
-	for _ in range(number_of_dice):
-		roll = random.randint(1,10)
-		rolls.append(roll)
-	return rolls
-#define 12 sided dice
-def roll_d12(number_of_dice):
-	rolls = []
-	for _ in range(number_of_dice):
-		roll = random.randint(1,12)
-		rolls.append(roll)
-	return rolls
-#define 20 sided dice
-def roll_d20(number_of_dice):
-	rolls = []
-	for _ in range(number_of_dice):
-		roll = random.randint(1,20)
-		rolls.append(roll)
-	return rolls
+
+class Dice:
+	# empty constructor
+	def __init__(self):
+		pass
+
+	def roll(self, max_roll, num_dice):
+		rolls = []
+		for _ in range(num_dice):
+			roll = random.randint(1, max_roll)
+			rolls.append(roll)
+		return rolls
+
+	def roll_d4(self, num_dice):
+		return self.roll(4, num_dice)
+
+	def roll_d6(self, num_dice):
+		return self.roll(6, num_dice)
+
+	def roll_d8(self, num_dice):
+		return self.roll(8, num_dice)
+
+	def roll_d10(self, num_dice):
+		return self.roll(10, num_dice)
+
+	def roll_d12(self, num_dice):
+		return self.roll(12, num_dice)
+
+	def roll_d20(self, num_dice):
+		return self.roll(20, num_dice)
