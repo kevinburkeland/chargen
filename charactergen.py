@@ -1,8 +1,12 @@
 #!/usr/bin/python
 #rev 0.1
-#Last modified 11/9/2019
+#Last modified 2/8/2022
 #writen by Kevin Burkeland
-import dice, mod, cclass
+# import Dice class
+from dice import Dice
+import mod, cclass
+# create Dice object for use in loop
+dice = Dice()
 print("Welcome to revision .01 of Kevin Burkelands Pathfinder Character Gen script")
 print("Pick your stat gen style:")
 print("1. Generous: 4d6 drops the lowest and gives you one 18 to start with")
