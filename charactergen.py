@@ -1,10 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #rev 0.1
 #Last modified 2/8/2022
 #writen by Kevin Burkeland
 # import Dice class
 from dice import Dice
-import mod, cclass
+import mod
 # create Dice object for use in loop
 dice = Dice()
 print("Welcome to revision .01 of Kevin Burkelands Pathfinder Character Gen script")
@@ -55,9 +55,9 @@ while True:
 		attrib = ["str","dex","con","int","wis","cha"]
 		stats = []
 		for _ in range(6):
-                        rolls = dice.roll_d6(3)
-                        stat = sum(rolls)
-                        stats.append(stat)
+						rolls = dice.roll_d6(3)
+						stat = sum(rolls)
+						stats.append(stat)
 		attribs = dict(zip(attrib, stats))
 		print(attribs)
 		break
